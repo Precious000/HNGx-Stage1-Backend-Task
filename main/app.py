@@ -7,8 +7,8 @@ app.json.sort_keys=False
 
 @app.route('/api', methods=['GET'])
 def get_info():
-    slack_name = request.args.get('Israel Precious', default='Default Slack Name')
-    track = request.args.get('Backend')
+    slack_name = request.args.get('Israel Precious', default='Israel Precious')
+    track = request.args.get('Backend', default='Backend')
 
     current_day = datetime.datetime.utcnow().strftime('%A')
     current_utc_time = datetime.datetime.utcnow().strftime('%Y-%m-%-d %H:%M:%S')
