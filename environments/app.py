@@ -6,9 +6,9 @@ app = Flask(__name__)
 app.json.sort_keys = False
 
 @app.route('/api', methods=['Get'])
-def get_data():
-    slack_name = request.args.get("Israel Precious")
-    track = request.args.get("Backend")
+def get_info():
+    slack_name = request.args.get('israel precious')
+    track = request.args.get( 'backend' )
 
   # Current day of the week and UTC time
     current_day = datetime.datetime.utcnow().strftime('%A')
