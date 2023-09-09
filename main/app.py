@@ -12,9 +12,14 @@ def get_info():
 
     current_day = datetime.datetime.utcnow().strftime('%A')
     current_utc_time = datetime.datetime.utcnow().strftime('%Y-%m-%-d %H:%M:%S')
+<<<<<<< HEAD
 
     github_url_file = "https://github.com/Precious000/HNGx-Stage1-Backend-Task/blob/master/main/app.py"
     github_url_source = "https://github.com/Precious000/HNGx-Stage1-Backend-Task"
+=======
+    github_url_file = 'https://github.com/Precious000/HNGx-Stage1-Backend-Task/blob/master/main/app.py'
+    github_url_source = 'https://github.com/Precious000/HNGx-Stage1-Backend-Task'
+>>>>>>> 51a5401 (new commit)
 
     status_code = 200
 
@@ -30,4 +35,4 @@ def get_info():
             }
     return jsonify(response)
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
