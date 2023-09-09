@@ -13,8 +13,8 @@ def get_info():
     current_day = datetime.datetime.utcnow().strftime('%A')
     current_utc_time = datetime.datetime.utcnow().strftime('%Y-%m-%-d %H:%M:%S')
 
-    github_url_file = "https://github.com/Precious000/HNGx-Stage1-Backend-Task/blob/master/main/app.py",
-    github_url_source = "https://github.com/Precious000/HNGx-Stage1-Backend-Task",
+    github_url_file = "https://github.com/Precious000/HNGx-Stage1-Backend-Task/blob/master/main/app.py"
+    github_url_source = "https://github.com/Precious000/HNGx-Stage1-Backend-Task"
 
     status_code = 200
 
